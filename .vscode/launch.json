@@ -1,0 +1,38 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "name": "Attach: Microsoft cloud sandbox",
+            "type": "al",
+            "request": "attach",
+            "environmentType": "Sandbox",
+            "environmentName": "FLH-TestProdData",
+            "breakOnError": true,
+            "breakOnRecordWrite": false,
+            "enableSqlInformationDebugger": true,
+            "enableLongRunningSqlStatements": true,
+            "longRunningSqlStatementsThreshold": 500,
+            "numberOfSqlStatements": 10,
+            "breakOnNext": "WebServiceClient"
+        },
+        
+        
+        {
+            "name": "Microsoft cloud sandbox",
+            "request": "launch",
+            "type": "al",
+            "environmentType": "Sandbox",
+            "environmentName": "FLH-TestProdData",
+            //"schemaUpdateMode": "Recreate",
+            //"schemaUpdateMode": "Synchronize",
+            //"schemaUpdateMode": "ForceSync",
+            "startupObjectId": 22,
+            "startupObjectType": "Page",
+            "breakOnError": true,
+            "launchBrowser": true,
+            "enableLongRunningSqlStatements": true,
+            "enableSqlInformationDebugger": true
+        }
+    ]
+}
